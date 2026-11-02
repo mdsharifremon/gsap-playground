@@ -1,3 +1,4 @@
+import { gsap } from "gsap";
 // Fade the card in and bring it to normal size
 gsap.to(".card", {
     opacity: 1,
@@ -23,3 +24,4 @@ gsap.from(".card", {
         });
     }
 });
+
