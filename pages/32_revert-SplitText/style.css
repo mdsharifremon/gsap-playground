@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&display=swap");
+
+main {
+  font-family: "Epilogue", sans-serif;
+  color: white;
+}
+
+.demo {
+  padding: 5rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+.sentence {
+  font-size: 1.3rem;
+  letter-spacing: 0.015em;
+}
+
+/* Visual clarity for split elements */
+.word {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  margin-right: 4px;
+}

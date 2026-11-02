@@ -1,2 +1,1 @@
-# gsap-playground
-GSAP playground for experiments and demos
+# Ultimate GSAP Workshop Starter
