@@ -1,6 +1,6 @@
 .toast {
   position: absolute;
-  bottom: 20px;
+  bottom: -120px;
   color: white;
   padding: 1rem 2rem;
   border-radius: 12px;
@@ -8,7 +8,7 @@
   backdrop-filter: blur(10px);
   letter-spacing: 0.5px;
   font-size: 16px;
-  opacity: 1;
+  opacity: 0;
   transform: scale(0.95);
   pointer-events: none;
 }
@@ -20,3 +20,8 @@
 .toast.two {
   background: linear-gradient(135deg, #ff7675, #fd79a8);
 }
+
+.toast.three {
+  background: linear-gradient(135deg, #e17055, #d63031);
+}
+
