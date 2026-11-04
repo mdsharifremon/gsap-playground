@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add to Cart Fly</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="nav">
+        <a href="/">
+          <img src="/logo.svg" alt="logo" />
+        </a>
+        <a href="https://sharifu.com" target="_blank">sharifu.com</a>
+      </header>
+
+      <div class="content">
+        <div class="arrow">
+          <a href="../../index.html">
+            <img src="/arrow.svg" alt="arrow" />
+          </a>
+        </div>
+
+        <section>
+          <h1>Add to Cart Fly</h1>
+          <p>
+            A product image flies into the cart when you press Add to cart, and
+            the cart count goes up when it lands. The product row never moves.
+            Only a temporary copy of the image does.
+          </p>
+          <p>
+            Your task is to build it in <code>script.js</code>. Create the copy,
+            place it exactly over the product image with
+            <code>getBoundingClientRect()</code>, move it to the cart with
+            <code>gsap.to()</code>, and remove it in <code>onComplete</code>.
+            Then raise the count.
+          </p>
+          <p>
+            Read more about
+            <a href="https://gsap.com/docs/v3/GSAP/gsap.to()" target="_blank"
+              >gsap.to()</a
+            >
+            and
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect"
+              target="_blank"
+              >getBoundingClientRect()</a
+            >.
+          </p>
+        </section>
+      </div>
+
+      <div class="demo flex-center">
+        <div class="shop">
+          <div class="shop-bar">
+            <span class="brand">Fieldnote</span>
+            <span id="cart">Cart <span id="count">0</span></span>
+          </div>
+
+          <div class="list">
+            <article class="card">
+              <img src="/add-to-cart/lay-flat.svg" alt="Lay-flat notebook" />
+              <div>
+                <h2>Lay-flat notebook</h2>
+                <span class="price">A5, dot grid · $18</span>
+              </div>
+              <button class="add" type="button" data-id="lay-flat">
+                Add to cart
+              </button>
+            </article>
+
+            <article class="card">
+              <img src="/add-to-cart/pocket.svg" alt="Pocket notebook, 3-pack" />
+              <div>
+                <h2>Pocket notebook</h2>
+                <span class="price">3-pack · $12</span>
+              </div>
+              <button class="add" type="button" data-id="pocket">
+                Add to cart
+              </button>
+            </article>
+
+            <article class="card">
+              <img src="/add-to-cart/journal.svg" alt="Field journal" />
+              <div>
+                <h2>Field journal</h2>
+                <span class="price">Ruled · $24</span>
+              </div>
+              <button class="add" type="button" data-id="journal">
+                Add to cart
+              </button>
+            </article>
+
+            <article class="card">
+              <img src="/add-to-cart/sketch-pad.svg" alt="Sketch pad" />
+              <div>
+                <h2>Sketch pad</h2>
+                <span class="price">40 sheets · $16</span>
+              </div>
+              <button class="add" type="button" data-id="sketch-pad">
+                Add to cart
+              </button>
+            </article>
+
+            <article class="card">
+              <img src="/add-to-cart/planner.svg" alt="Desk planner" />
+              <div>
+                <h2>Desk planner</h2>
+                <span class="price">Undated · $22</span>
+              </div>
+              <button class="add" type="button" data-id="planner">
+                Add to cart
+              </button>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <script type="module" src="script.js"></script>
+    </main>
+  </body>
+</html>
