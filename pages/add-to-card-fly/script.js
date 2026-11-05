@@ -27,7 +27,7 @@ addButtons.forEach(button => {
     clearTimeout(button.timer);
     button.classList.remove('added', 'error');
     // Button Functionality
-    e.target.disabled = true;
+    button.disabled = true;
     button.textContent = "Adding..."
 
     // Simulate a network request
@@ -49,7 +49,7 @@ addButtons.forEach(button => {
             show(button, error.message, "error")
     }
 
-    e.target.disabled = false;
+   button.disabled = false;
     
   });
 
@@ -80,7 +80,7 @@ function flyToCart(img, count) {
     const startX = imgRect.left + imgRect.width / 2;
     const startY = imgRect.top + imgRect.height / 2;
 
-    console.log("StartX: ", startX, "StartY: ", startY);
+   
 
     // Create a ghost image element
     const ghostImg  = document.createElement('img');
